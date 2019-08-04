@@ -7,7 +7,7 @@ import ProjectList from "./ProjectList/ProjectList";
 class index extends Component {
   render() {
     return (
-      <Row gutter={16}>
+      <Row gutter={64}>
         <Col span={12}>
           <ProjectList />
         </Col>

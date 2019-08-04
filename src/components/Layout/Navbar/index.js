@@ -34,16 +34,16 @@ const index = () => {
         <Menu.Item key="1">
           <NavLink to="/">Signup</NavLink>
         </Menu.Item>
-        <Menu.Item key="1">
+        <Menu.Item key="2">
           <NavLink to="/">Login</NavLink>
         </Menu.Item>
-        <Menu.Item key="1">
+        <Menu.Item key="3">
           <NavLink to="/">New Project</NavLink>
         </Menu.Item>
-        <Menu.Item key="2">
+        <Menu.Item key="4">
           <NavLink to="/logout">Log Out</NavLink>
         </Menu.Item>
-        <Menu.Item key="4">
+        <Menu.Item key="5">
           <Button shape="circle">SD</Button>
         </Menu.Item>
       </Menu>

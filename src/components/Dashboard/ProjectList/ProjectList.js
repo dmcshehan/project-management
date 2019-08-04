@@ -1,16 +1,16 @@
-import styles from "./projectList.module.scss" 
 import React from "react";
-import { Card } from "antd";
-const { Meta } = Card;
-
-
+import ProjectSummary from "../../Project/ProjectSummary/ProjectSummary";
+import { Typography } from "antd";
+const { Title } = Typography;
 
 const ProjectList = () => {
   return (
     <div>
-      <Card className={styles.card}>
-        <Meta title="Europe Street beat" description="Ant Design, a design language for background applications, is refined by Ant UED Team" />
-      </Card>
+      <Title level={4}>Projects</Title>
+      <ProjectSummary />
+      <ProjectSummary />
+      <ProjectSummary />
+      <ProjectSummary />
     </div>
   );
 };
