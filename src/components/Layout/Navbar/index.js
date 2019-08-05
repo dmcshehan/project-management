@@ -32,13 +32,13 @@ const index = () => {
         style={{ lineHeight: "64px" }}
       >
         <Menu.Item key="1">
-          <NavLink to="/">Signup</NavLink>
+          <NavLink to="/signup">Signup</NavLink>
         </Menu.Item>
         <Menu.Item key="2">
-          <NavLink to="/">Login</NavLink>
+          <NavLink to="/signin">Signin</NavLink>
         </Menu.Item>
         <Menu.Item key="3">
-          <NavLink to="/">New Project</NavLink>
+          <NavLink to="/create">New Project</NavLink>
         </Menu.Item>
         <Menu.Item key="4">
           <NavLink to="/logout">Log Out</NavLink>

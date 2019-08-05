@@ -3,14 +3,14 @@ import ProjectSummary from "../../Project/ProjectSummary/ProjectSummary";
 import { Typography } from "antd";
 const { Title } = Typography;
 
-const ProjectList = () => {
+const ProjectList = ({ projects }) => {
   return (
     <div>
       <Title level={4}>Projects</Title>
-      <ProjectSummary />
-      <ProjectSummary />
-      <ProjectSummary />
-      <ProjectSummary />
+      {projects &&
+        projects.map(project => (
+          <ProjectSummary key={project.id} project={project} />
+        ))}
     </div>
   );
 };

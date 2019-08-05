@@ -37,10 +37,15 @@ class NormalSignupForm extends React.Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit} className="login-form">
+      <Form
+        onSubmit={this.handleSubmit}
+        className="login-form"
+        labelCol={{ span: 5 }}
+        wrapperCol={{ span: 8, offset: 8 }}
+      >
         <Form.Item>
           <Input
-            prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
+            prefix={<Icon type="mail" style={{ color: "rgba(0,0,0,.25)" }} />}
             placeholder="Email"
             name="email"
             value={this.state.email}
@@ -59,7 +64,7 @@ class NormalSignupForm extends React.Component {
         </Form.Item>
         <Form.Item>
           <Input
-            prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+            prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
             value={this.state.firstName}
             placeholder="First Name"
             name="firstName"
@@ -68,7 +73,7 @@ class NormalSignupForm extends React.Component {
         </Form.Item>
         <Form.Item>
           <Input
-            prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+            prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
             value={this.state.firstName}
             placeholder="Last Name"
             name="lastName"
